@@ -32,8 +32,8 @@ targetNodes:
     jenkins, jenkins2
   ]
 
-homepage: https://github.com/jelastic-jps/lets-encrypt
-baseUrl: https://cdn.jsdelivr.net/gh/jelastic-jps/lets-encrypt@master
+homepage: https://github.com/camna/jps-lets-encrypt-slb/tree/feature/slb-ssl-setting
+baseUrl: https://raw.githubusercontent.com/camna/jps-lets-encrypt-slb/refs/heads/feature/slb-ssl-setting
 logo: images/letsencrypt.png
 
 description:
