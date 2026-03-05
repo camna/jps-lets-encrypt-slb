@@ -20,6 +20,8 @@ The Let’s Encrypt add-on allows to configure SSL for:
 * **_internal environment address_**, which is composed of environment name and platform domain, to be served with a dummy (i.e. not commonly trusted) SSL certificate; this option can be used for testing purposes
 * **_external domain(s)_**, each of which should be preliminarily bound to external IP of the corresponding node - either master application server instance or load balancer - via [A Record](https://docs.jelastic.com/a-records-domain-names) or [CNAME](https://docs.jelastic.com/custom-domain-via-cname); provides trusted SSL certificates for production applications
 
+You can optionally enable **Use Shared Load Balancer (SLB) for SSL**. When enabled, SSL is terminated at the platform's Shared Load Balancer and no public IP is attached to your nodes. Point your domain DNS to the SLB endpoint instead of a node IP. Use this when all traffic is routed through the platform's Shared Load Balancer.
+
 To get deeper insights on how the Let’s Encrypt service works, refer to the [official documentation](https://letsencrypt.org/how-it-works/).
 
 ## Installation Process
@@ -40,6 +42,7 @@ In the opened confirmation window:
 <img src="https://cdn.jsdelivr.net/gh/jelastic-jps/lets-encrypt@master/images/separate-domains.png" width="400">
 </p>
 
+* optionally enable **Use Shared Load Balancer (SLB) for SSL** if you want SSL terminated at the SLB with no public IP on your nodes (point your domain DNS to the SLB endpoint)
 * select the corresponding **Environment name** within the expandable drop-down list 
 * choose a Nodes layer with your environment entry point (usually, it’s automatically detected but can be redefined manually)
 

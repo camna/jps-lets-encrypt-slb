@@ -32,8 +32,8 @@ targetNodes:
     jenkins, jenkins2
   ]
 
-homepage: https://github.com/camna/jps-lets-encrypt-slb/tree/feature/slb-ssl-setting
-baseUrl: https://raw.githubusercontent.com/camna/jps-lets-encrypt-slb/refs/heads/feature/slb-ssl-setting
+homepage: https://github.com/camna/jps-lets-encrypt-slb/
+baseUrl: https://raw.githubusercontent.com/camna/jps-lets-encrypt-slb/refs/heads/master
 logo: images/letsencrypt.png
 
 description:
